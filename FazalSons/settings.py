@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-a!*(fow%l)n7(6_g#jj8+8%=$v&^h+&-(wb%zu2^92b30l1&#q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -82,23 +82,15 @@ WSGI_APPLICATION = 'FazalSons.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
+
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'db_fazal_sons_pos',
         'USER': 'postgres',
-        'PASSWORD': '123',
+        'PASSWORD': 'Naveed*123',
         'PORT': '5432',
-        'HOST': 'localhost',
+        'HOST': 'fazalsons.ctsg24aca9u5.eu-north-1.rds.amazonaws.com',
     }
-
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': 'db_fazal_sons_pos',
-    #     'USER': 'postgres',
-    #     'PASSWORD': 'Naveed*123',
-    #     'PORT': '5432',
-    #     'HOST': 'fazalsons.ctsg24aca9u5.eu-north-1.rds.amazonaws.com',
-    # }
 }
 
 
